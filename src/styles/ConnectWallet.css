@@ -1,0 +1,19 @@
+.ConnectWallet{
+    height: 5vh;
+    width: 25vh;
+    position: absolute;
+    top: 7vh;
+    right: 10vh;
+    background-color: olivedrab;
+    border-radius: 10px;
+}
+
+.WalletConnected{
+    height: 5vh;
+    width: 25vh;
+    position: absolute;
+    top: 7vh;
+    right: 10vh;
+    background-color: olive;
+    border-radius: 10px;
+}
