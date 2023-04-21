@@ -1,6 +1,6 @@
+import "../styles/UseNetworkPopUp.css"
 import { useNetwork, useSwitchNetwork } from 'wagmi';
 import Popup from "reactjs-popup";
-import ConnectWallet from "./ConnectWallet";
 import { useAccount } from 'wagmi';
 
 const network = 5; // goerli test net
@@ -15,21 +15,21 @@ function UseNetworkPopUp() {
     
     if (isConnected && chain?.id !== network) {
     return (
-      <div>
         <Popup
            open={true}
            modal
         >
+                <h1>Please use the Goerli Testnet for this app</h1>
                 <button
+                    className="switch-network-button"
                     onClick={() => switchNetwork?.(network)}
                 >
-                   Please use the Goerli Testnet
+                    Switch Network
                     {isLoading && pendingChainId === network && ' (switching)'}
                 </button>
 
             <div>{error && error.message}</div>
         </Popup>
-      </div>
     )
   }
 
