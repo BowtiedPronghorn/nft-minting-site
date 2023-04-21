@@ -3,6 +3,7 @@ import '../styles/ConnectWallet.css'
 import { useAccount, useConnect, useDisconnect } from 'wagmi';
 import { InjectedConnector } from 'wagmi/connectors/injected';
 
+
 const ConnectWallet = () => {
     const { address, isConnected } = useAccount()
     const { connect } = useConnect({

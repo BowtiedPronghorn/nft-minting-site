@@ -11,7 +11,7 @@ const Mint = () => {
     })
     const { data, isLoading, isSuccess, write } = useContractWrite(config)
     // txnhash : 0xc0a7544cd2221905c8585f28b8972f8b2974df93eccb54df36c0cf561cdd673f
-    console.log(data);
+    //console.log(data);
 
 
     return (
